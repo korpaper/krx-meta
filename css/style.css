@@ -1,0 +1,260 @@
+.edu-wrap{
+    width: 100%;
+    height: 100%;
+}
+.edu-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.edu-inner{
+    display: flex;
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    /* max-height: 800px; */
+    padding: 73px 10px 0 10px;
+    box-sizing: border-box;
+    /* display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center; */
+    color: #fff;
+    /* overflow: hidden; */
+}
+.edu-logo{
+    padding: 0 4% 0 4.5%;
+}
+/* .tab-menu-wrap{
+    width: 100%;
+    height: 100%;
+} */
+.tab-menu {
+    width: 100%;
+    max-width: 1280px;
+}
+.tab {
+    display: flex;
+    width: 100%;
+}
+.tab-item {
+    width: 25%;
+    height: auto;
+    padding: 13px 0;
+    font-family: var(--fn-sans);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -1.12px;
+    text-align: center;
+    border: solid 1px #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.tab-inner-wrap {
+    width: 100%;
+    height: 70%;
+    max-height: 760px;
+    margin-top: 55px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.tab-inner-wrap::-webkit-scrollbar{
+    width: 1px;
+    background: transparent;
+}
+.tab-inner-wrap::-webkit-scrollbar-thumb{
+    background: #000;
+}
+.tab-inner {
+    display: none;
+    width: 100%;
+    height: 80%;
+    color: #fff;
+}
+.tab-cont{
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    grid-row-gap: 55px;
+    grid-column-gap: 24px;
+    width: 100%;
+    height: 100%;
+}
+.tab-cont>li{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.tab-cont>li>a{
+    width: 395px;
+    height: 229.9px;
+}
+.tab-cont>li>a>img{
+    width: 100%;
+}
+.tab-cont>li>p{
+    display: flex;
+    flex-direction: column;
+    padding-top: 18.1px;
+    font-family: var(--fn-sans);
+    box-sizing: border-box;
+}
+.chap{
+    font-weight: bold;
+    line-height: 1.44;
+    letter-spacing: -1.35px;
+}
+.title{
+    padding-top: 10px;
+    font-size: 22px;
+    line-height: 1.45;
+    letter-spacing: -1.65px;
+    box-sizing: border-box;
+}
+
+.tab-item.active {
+    background: #00a8cd;
+    color: #fff;
+}
+
+.tab-inner.active {
+    display: block;
+}
+
+.mb-tab-wrap{
+    display: none;
+}
+
+@media (max-width : 1100px){
+    .edu-logo{
+        display: none;
+    }
+    .edu-inner{
+        display: flex;
+        flex-direction: column;
+        padding: 37.1px 25px 0 25px;
+    }
+    .edu-logo{
+        padding: 0 0 0 0;
+    }
+    .tab-menu {
+        width: 100%;
+        max-width: 1280px;
+    }
+    .tab {
+        display: none;
+    }
+    .mb-tab-wrap{
+        display: block;
+        position: fixed;
+        left: 0;
+        width: 100%;
+        padding: 0 26px 0 25px;
+        margin-top: 21px;
+        font-family: var(--fn-sans);
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: -1.12px;
+        color: #3e3e3e;
+        /* margin-top: 21px; */
+    }
+    .mb-tab{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .mb-logo{
+        padding-bottom: 21px;
+
+    }
+    .mb-tab-item{
+        width: 100%;
+        line-height: 50px;
+        padding: 0px 20.8px;
+        box-sizing: border-box;
+        text-align: center;
+        background-color: #fff;
+    }
+    .mb-tab-item{
+        position: relative;
+    }
+    .mb-tab-item::after {
+        content: '';
+        width: 12px;
+        height: 11px;
+        border-top: 1px solid #fff;
+        border-right: 1px solid #fff;
+        display: inline-block;
+        transform: rotate(135deg);
+        position: absolute;
+        top: 15px;
+        right: 28px;
+    }
+    .mb-tab-item:nth-of-type(n + 2){
+        display: none;
+    }
+
+
+    .mb-tab-item.active {
+        background: #00a8cd;
+        color: #fff;
+    }
+    .tab-inner.active {
+        display: block;
+    }
+
+    /* 콘텐츠들 */
+    .edu-wrap{
+        width: 100%;
+        height: 100%;
+    }
+    .edu-bg{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    .tab-inner-wrap {
+        max-height: 900px;
+        margin-top: 90px;
+    }
+
+    .tab-cont{
+        display: flex;
+        flex-wrap: wrap;
+        grid-row-gap: unset;
+        grid-column-gap: unset;
+    }
+    .tab-cont>li{
+        height: auto;
+        padding-bottom: 25.1px;
+    }
+    .tab-cont>li>p{
+        padding-top: 10.4px;
+    }
+    .chap{
+        font-size: 14px;
+        letter-spacing: -1.05px;
+    }
+    .title{
+        padding-top: 5px;
+        font-size: 16px;
+        line-height: 1.45;
+        letter-spacing: -1.2px;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width : 768px){
+    .tab-inner-wrap {
+        max-height: 500px;
+        margin-top: 90px;
+    }
+}
